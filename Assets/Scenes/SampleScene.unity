@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &72023037 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6364104845256243954, guid: 904ab090b6f563843962b01741543e94, type: 3}
+  m_PrefabInstance: {fileID: 6166056092087528436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &394788829
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +413,7 @@ Transform:
   m_GameObject: {fileID: 850326374}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 245, y: 115.47, z: 419.5}
+  m_LocalPosition: {x: 245, y: 115.47, z: 433.53}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -544,7 +549,7 @@ PlayableDirector:
     value: {fileID: 394788830}
   - key: {fileID: -6660443234441162488, guid: db5c6e253cd8fac4c8dbc4ae25aa1b87, type: 2}
     value: {fileID: 850326375}
-  - key: {fileID: 7792760287769899109, guid: db5c6e253cd8fac4c8dbc4ae25aa1b87, type: 2}
+  - key: {fileID: -2501427801979982792, guid: db5c6e253cd8fac4c8dbc4ae25aa1b87, type: 2}
     value: {fileID: 850326375}
   m_ExposedReferences:
     m_References: []
@@ -563,6 +568,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1629953096 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 931379735708941805, guid: 904ab090b6f563843962b01741543e94, type: 3}
+  m_PrefabInstance: {fileID: 6166056092087528436}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1779672814
 GameObject:
   m_ObjectHideFlags: 0
@@ -684,6 +694,9 @@ MonoBehaviour:
   pitchControl: 10
   yawPosition: 2
   rollControl: -20
+  lasers:
+  - {fileID: 1629953096}
+  - {fileID: 72023037}
 --- !u!1001 &6166056092087528436
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -735,6 +748,14 @@ PrefabInstance:
     - target: {fileID: 2421345857697221622, guid: 904ab090b6f563843962b01741543e94, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2737911857457088458, guid: 904ab090b6f563843962b01741543e94, type: 3}
+      propertyPath: looping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8161154847953240277, guid: 904ab090b6f563843962b01741543e94, type: 3}
+      propertyPath: looping
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

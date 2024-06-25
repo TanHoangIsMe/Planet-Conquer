@@ -14,14 +14,16 @@ public class PlayerMoveControl : MonoBehaviour
     [SerializeField] float pitchControl;
     [SerializeField] float yawPosition;
     [SerializeField] float rollControl;
+    [SerializeField] GameObject[] lasers;
 
-    float moveHorizontal,moveVertical;  
+    float moveHorizontal, moveVertical;
 
     // Update is called once per frame
     void Update()
     {
         Transaltion();
         Rotation();
+        Firing();
     }
 
     private void Rotation()
@@ -30,7 +32,7 @@ public class PlayerMoveControl : MonoBehaviour
             + moveVertical * pitchControl;
         float yaw = transform.localPosition.x * yawPosition;
         float roll = moveHorizontal * rollControl;
-        transform.localRotation = Quaternion.Euler(pitch, yaw,roll);
+        transform.localRotation = Quaternion.Euler(pitch, yaw, roll);
     }
 
     private void Transaltion()
@@ -51,6 +53,27 @@ public class PlayerMoveControl : MonoBehaviour
 
         transform.localPosition = new Vector3(clampX, clampY, transform.localPosition.z);
     }
+
+    private void Firing()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            foreach(GameObject laser in lasers)
+            {
+                var emssionModuel = laser.GetComponent<ParticleSystem>().emission;
+                emssionModuel.enabled = true;
+            }
+        }
+        else
+        {
+            foreach (GameObject laser in lasers)
+            {
+                var emssionModuel = laser.GetComponent<ParticleSystem>().emission;
+                emssionModuel.enabled = false;
+            }
+        }
+    }
+
     //private void OnEnable()
     //{
     //    movement.Enable();
