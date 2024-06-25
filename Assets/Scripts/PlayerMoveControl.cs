@@ -10,12 +10,33 @@ public class PlayerMoveControl : MonoBehaviour
     [SerializeField] float speed;
     [SerializeField] float horizontalRange = 1f;
     [SerializeField] float verticalRange = 1f;
+    [SerializeField] float pitchPosition;
+    [SerializeField] float pitchControl;
+    [SerializeField] float yawPosition;
+    [SerializeField] float rollControl;
+
+    float moveHorizontal,moveVertical;  
 
     // Update is called once per frame
     void Update()
     {
-        float moveHorizontal = Input.GetAxis("Horizontal");
-        float moveVertical = Input.GetAxis("Vertical");
+        Transaltion();
+        Rotation();
+    }
+
+    private void Rotation()
+    {
+        float pitch = transform.localPosition.y * pitchPosition
+            + moveVertical * pitchControl;
+        float yaw = transform.localPosition.x * yawPosition;
+        float roll = moveHorizontal * rollControl;
+        transform.localRotation = Quaternion.Euler(pitch, yaw,roll);
+    }
+
+    private void Transaltion()
+    {
+        moveHorizontal = Input.GetAxis("Horizontal");
+        moveVertical = Input.GetAxis("Vertical");
 
         //float moveHorizontal = movement.ReadValue<Vector2>().x;
         //float moveVertical = movement.ReadValue<Vector2>().y;
