@@ -7,13 +7,25 @@ public class PlayerMoveControl : MonoBehaviour
 {
     //[SerializeField] InputAction movement;
 
+    [Header("General Setting")]
+    [Tooltip("How fast the ship move")]
     [SerializeField] float speed;
+    [Tooltip("Show the max position that ship can move to in X")]
     [SerializeField] float horizontalRange = 1f;
+    [Tooltip("Show the max position that ship can move to in Y")]
     [SerializeField] float verticalRange = 1f;
+
+    [Header("Rotation Setting Value")]
+    [Tooltip("Pitch value due to position of ship")]
     [SerializeField] float pitchPosition;
+    [Tooltip("Pitch value due to input")]
     [SerializeField] float pitchControl;
+    [Tooltip("Yaw value due to position of ship")]
     [SerializeField] float yawPosition;
+    [Tooltip("Roll value due to input")]
     [SerializeField] float rollControl;
+
+    [Header("Laser Prefabs")]
     [SerializeField] GameObject[] lasers;
 
     float moveHorizontal, moveVertical;
