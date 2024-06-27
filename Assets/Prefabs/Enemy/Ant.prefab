@@ -1170,8 +1170,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemyExplosion: {fileID: 4089516300075344156, guid: 1c6c45886db1d9e43b7e80dbb43fcc84, type: 3}
   hitEffect: {fileID: 5691659707319416959, guid: 9c7a4c86ac5c91d45a1a3924d8ab84aa, type: 3}
-  spawnPosition: {fileID: 0}
-  score: 0
+  score: 1
   hitPoint: 3
 --- !u!1 &6837074141078276884
 GameObject:
