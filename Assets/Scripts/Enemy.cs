@@ -28,7 +28,6 @@ public class Enemy : MonoBehaviour
     private void OnParticleCollision(GameObject other)
     {
         CreateHitEffect();
-        CountScoreBoard();
         DestroyMySelf();
     }
 
@@ -43,6 +42,7 @@ public class Enemy : MonoBehaviour
         if (hitPoint < 0)
         {
             Destroy(gameObject);
+            CountScoreBoard();
             CreateDeathEffect();
         }           
     }
