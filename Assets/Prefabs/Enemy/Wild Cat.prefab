@@ -499,6 +499,7 @@ GameObject:
   - component: {fileID: 5295905811344241412}
   - component: {fileID: 665301381368727422}
   - component: {fileID: -2317968203629912037}
+  - component: {fileID: -6661708073464552941}
   m_Layer: 0
   m_Name: Wild Cat
   m_TagString: Untagged
@@ -588,6 +589,27 @@ MonoBehaviour:
   hitEffect: {fileID: 5691659707319416959, guid: 9c7a4c86ac5c91d45a1a3924d8ab84aa, type: 3}
   score: 3
   hitPoint: 3
+--- !u!65 &-6661708073464552941
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2202975575813438438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 10.748315, y: 2.8570216, z: 12.959621}
+  m_Center: {x: 0, y: -0.00000023841858, z: 0.0000011920929}
 --- !u!1 &2647114356025495398
 GameObject:
   m_ObjectHideFlags: 0

@@ -1087,6 +1087,7 @@ GameObject:
   - component: {fileID: 8704939842735097206}
   - component: {fileID: 7774511536750967129}
   - component: {fileID: 3434558173396867142}
+  - component: {fileID: 3740758692719478350}
   m_Layer: 0
   m_Name: Mantis
   m_TagString: Untagged
@@ -1176,6 +1177,27 @@ MonoBehaviour:
   hitEffect: {fileID: 5691659707319416959, guid: 9c7a4c86ac5c91d45a1a3924d8ab84aa, type: 3}
   score: 2
   hitPoint: 6
+--- !u!65 &3740758692719478350
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7696537598816130882}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.070741, y: 5.88792, z: 15.8964205}
+  m_Center: {x: 0, y: -0.0000010728835, z: -0.000009775161}
 --- !u!1 &8844023108037448135
 GameObject:
   m_ObjectHideFlags: 0

@@ -1083,6 +1083,7 @@ GameObject:
   - component: {fileID: 8016374698128626039}
   - component: {fileID: 7608818967694318157}
   - component: {fileID: -8789805873421920664}
+  - component: {fileID: 8217180719763494781}
   m_Layer: 0
   m_Name: Ant
   m_TagString: Untagged
@@ -1172,6 +1173,27 @@ MonoBehaviour:
   hitEffect: {fileID: 5691659707319416959, guid: 9c7a4c86ac5c91d45a1a3924d8ab84aa, type: 3}
   score: 1
   hitPoint: 3
+--- !u!65 &8217180719763494781
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6361845308917883104}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 6.214741, y: 3.4655335, z: 13.562565}
+  m_Center: {x: 0, y: -0.000000834465, z: -0.000006914139}
 --- !u!1 &6837074141078276884
 GameObject:
   m_ObjectHideFlags: 0

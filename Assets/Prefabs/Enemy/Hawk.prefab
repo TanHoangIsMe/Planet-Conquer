@@ -337,6 +337,7 @@ GameObject:
   - component: {fileID: 2920664395382567952}
   - component: {fileID: 1232833221190737476}
   - component: {fileID: -6639304991508469146}
+  - component: {fileID: -2056757724362643635}
   m_Layer: 0
   m_Name: Hawk
   m_TagString: Untagged
@@ -426,6 +427,27 @@ MonoBehaviour:
   hitEffect: {fileID: 5691659707319416959, guid: 9c7a4c86ac5c91d45a1a3924d8ab84aa, type: 3}
   score: 5
   hitPoint: 10
+--- !u!65 &-2056757724362643635
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1981894212743981929}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.651425, y: 1.7536123, z: 12.358537}
+  m_Center: {x: 0, y: -0.0000010728836, z: 0.000006198883}
 --- !u!1 &2506172895264124343
 GameObject:
   m_ObjectHideFlags: 0

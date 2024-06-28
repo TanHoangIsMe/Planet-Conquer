@@ -1519,6 +1519,7 @@ GameObject:
   - component: {fileID: 8167337711160543394}
   - component: {fileID: 6554620468168341801}
   - component: {fileID: 4732475444338728957}
+  - component: {fileID: 492371327893789117}
   m_Layer: 0
   m_Name: T-Rex
   m_TagString: Untagged
@@ -1608,6 +1609,27 @@ MonoBehaviour:
   hitEffect: {fileID: 5691659707319416959, guid: 9c7a4c86ac5c91d45a1a3924d8ab84aa, type: 3}
   score: 50
   hitPoint: 20
+--- !u!65 &492371327893789117
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7986141872729375610}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 9.259227, y: 2.7161152, z: 12.203047}
+  m_Center: {x: 0, y: -0.000000834465, z: -0.0000023841858}
 --- !u!1 &8720572615081675474
 GameObject:
   m_ObjectHideFlags: 0
